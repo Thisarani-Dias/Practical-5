@@ -59,7 +59,7 @@ object libraryManagement {
     println(isBookInLibrary("9780451524935")) // false
 
     println("\nSearching for a book by title...")
-    searchByTitle("1984") match {
+    searchByTitle("1985") match {
       case Some(book) => println(s"Book found: Title: ${book.title}, Author: ${book.author}, ISBN: ${book.isbn}")
       case None => println("Book not found.")
     }
