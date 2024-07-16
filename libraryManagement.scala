@@ -13,7 +13,7 @@ object libraryManagement {
   }
 
   def removeBook(isbn: String): Unit = {
-    library = library.filterNot(_.isbn == isbn)
+    library = library.filterNot(_.isbn == isbn)  //returns a new collection containing others except the isbn
   }
 
   def isBookInLibrary(isbn: String): Boolean = {
