@@ -16,8 +16,8 @@ object inventoryManagement {
     }
 
     def printProductList(products: List[String]): Unit = {
-      products.zipWithIndex.foreach {
-        case (product, index) => println(s"${index + 1}. $product")
+      for (index <- products.indices){
+        println(s"${index +1}.${products(index)}")
       }
     }
 
