@@ -27,7 +27,7 @@ object libraryManagement {
     }
   }
 
-  def searchByTitle(title: String): Unit = {
+  def searchByTitle(title: String): Option[Book] = {
     library.find(_.title.equalsIgnoreCase(title))
   }
 
